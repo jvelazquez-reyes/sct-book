@@ -1,23 +1,22 @@
 ---
-title: 'NeuroLibre preprint (PDF) template'
+title: 'Image processing with Spinal Cord Toolbox (SCT)'
 tags:
-  - Preprint
+  - Spinal Cord Toolbox
   - Jupyter Book
-  - Reproducible article
-  - Neuroscience
+  - Interactive tutorial
 authors:
-  - name: Agah Karakuzu
-    orcid: 0000-0001-7283-271X
+  - name: Mathieu Boudreau
+    orcid: 0000-0002-7726-4456
     affiliation: "1, 2"
-  - name: Nikola Stikov
-    orcid: 0000-0002-8480-5230
+  - name: Julien Cohen-Adad
+    orcid: 0000-0003-3662-9532
     affiliation: "1, 2"
 affiliations:
  - name: NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montreal, Montreal, Canada
    index: 1
  - name: Montreal Heart Institute, University of Montréal, Montréal, Canada
    index: 2
-date: 26 March 2021
+date: 11 October 2021
 bibliography: paper.bib
 ---
 
