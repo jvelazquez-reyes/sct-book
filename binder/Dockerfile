@@ -47,6 +47,8 @@ RUN cd $HOME/work;\
                 ipywidgets \
                 nbconvert==5.4.0 \
                 jupyterlab>=0.35.4 \
+		jupyter-book==0.11.0\
+                jupytext\
                 pandas \
                 numpy \
                 datascience \
@@ -55,7 +57,7 @@ RUN cd $HOME/work;\
                 sklearn \
                 nilearn ; \
     python -m sos_notebook.install;\
-    git clone --single-branch -b master https://github.com/jvelazquez-reyes/sct-book;     \
+    git clone https://github.com/jvelazquez-reyes/sct-book.git;     \
     cd sct-book;\
     git clone --branch=master https://github.com/neuropoly/spinalcordtoolbox.git sct; \
     cd sct; \
