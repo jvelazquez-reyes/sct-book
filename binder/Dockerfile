@@ -54,7 +54,7 @@ RUN cd $HOME/work;\
     yes | ./install_sct; \
     source /home/jovyan/.bashrc; \
     source activate /home/jovyan/work/sct-book/sct/python/envs/venv_sct; \
-    pip install notebook;
+    pip install notebook; \
     cd .. ;\
     chmod -R 777 $HOME/work/sct-book;
 
