@@ -49,7 +49,7 @@ RUN cd $HOME/work;\
                 nilearn ; \
     git clone https://github.com/jvelazquez-reyes/sct-book.git;     \
     cd sct-book;\
-    git clone --branch=master https://github.com/neuropoly/spinalcordtoolbox.git sct; \
+    git clone --branch=master https://github.com/neuropoly/spinalcordtoolbox.git sct;  \
     cd sct; \
     yes | ./install_sct; \
     cd .. ;\
@@ -60,5 +60,3 @@ ENV PATH "/home/jovyan/work/sct-book/sct/bin:$PATH"
 WORKDIR $HOME/work/sct-book
 
 USER $NB_UID
-
-RUN jupyter labextension install @jupyterlab/plotly-extension;
