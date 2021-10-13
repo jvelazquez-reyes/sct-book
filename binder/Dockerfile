@@ -36,9 +36,9 @@ RUN cd $HOME/work;\
                 sh \
                 flask \
                 ipywidgets \
-                nbconvert==5.4.0 \
-                jupyterlab>=0.35.4 \
-		jupyter-book==0.11.1\
+                nbconvert \
+                jupyterlab \
+		jupyter-book \
                 jupytext\
                 pandas \
                 numpy \
