@@ -61,5 +61,4 @@ WORKDIR $HOME/work/sct-book
 
 USER $NB_UID
 
-RUN jupyter labextension install @jupyterlab/plotly-extension;  \
-    jupyter labextension install @jupyterlab/celltags; \
+RUN jupyter labextension install @jupyterlab/plotly-extension;
