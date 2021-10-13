@@ -47,7 +47,7 @@ RUN cd $HOME/work;\
                 ipywidgets \
                 nbconvert==5.4.0 \
                 jupyterlab>=0.35.4 \
-		jupyter-book==0.11.0\
+		jupyter-book==0.11.1\
                 jupytext\
                 pandas \
                 numpy \
