@@ -26,16 +26,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN cd $HOME/work;\
-    pip install sos==0.17.7  \
-                sos-notebook==0.17.2 \
-                sos-python==0.9.12.1 \
-                sos-bash==0.12.3 \
-                sos-matlab==0.9.12.1 \
-                sos-ruby==0.9.15.0 \
-                sos-sas==0.9.12.3 \
-                sos-julia==0.9.12.1 \
-                sos-javascript==0.9.12.2 \
-                scipy \
+    pip install scipy \
                 plotly \
                 dash \
                 dash_core_components \
@@ -56,7 +47,6 @@ RUN cd $HOME/work;\
                 matplotlib \
                 sklearn \
                 nilearn ; \
-    python -m sos_notebook.install;\
     git clone https://github.com/jvelazquez-reyes/sct-book.git;     \
     cd sct-book;\
     git clone --branch=master https://github.com/neuropoly/spinalcordtoolbox.git sct; \
@@ -73,4 +63,3 @@ USER $NB_UID
 
 RUN jupyter labextension install @jupyterlab/plotly-extension;  \
     jupyter labextension install @jupyterlab/celltags; \
-    jupyter labextension install jupyterlab-sos
