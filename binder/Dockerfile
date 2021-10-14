@@ -51,8 +51,8 @@ RUN cd $HOME/work;\
     cd sct-book;\
     git clone --branch=master https://github.com/neuropoly/spinalcordtoolbox.git sct;  \
     cd sct; \
-    yes | ./install_sct; \
     echo "notebook" >> /home/jovyan/work/sct-book/sct/requirements.txt; \
+    yes | ./install_sct; \
     cd .. ;\
     chmod -R 777 $HOME/work/sct-book;
 
