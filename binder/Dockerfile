@@ -53,6 +53,8 @@ RUN cd $HOME/work;\
     echo "notebook" >> /home/jovyan/work/sct-book/sct/requirements.txt; \
     yes | ./install_sct; \
     cd .. ;\
+    source activate /home/jovyan/work/sct-book/sct/python/envs/venv_sct; \
+    pip3 install matplotlib; \
     chmod -R 777 $HOME/work/sct-book;
 
 ENV PATH "/home/jovyan/work/sct-book/sct/bin:$PATH"
