@@ -44,6 +44,7 @@ RUN cd $HOME/work;\
                 numpy \
                 datascience \
                 folium \
+                matplotlib \
                 sklearn \
                 nilearn ; \
     git clone https://github.com/jvelazquez-reyes/sct-book.git;     \
@@ -52,9 +53,7 @@ RUN cd $HOME/work;\
     cd sct; \
     echo "notebook" >> /home/jovyan/work/sct-book/sct/requirements.txt; \
     yes | ./install_sct; \
-    source activate /home/jovyan/work/sct-book/sct/python/envs/venv_sct; \
-    pip install matplotlib; \
-    cd .. ; \
+    cd .. ;\
     chmod -R 777 $HOME/work/sct-book;
 
 ENV PATH "/home/jovyan/work/sct-book/sct/bin:$PATH"
