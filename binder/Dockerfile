@@ -26,7 +26,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN cd $HOME/work;\
-    pip install scipy \
+    pip install scipy  \
                 plotly \
                 dash \
                 dash_core_components \
