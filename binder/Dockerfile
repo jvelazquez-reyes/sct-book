@@ -20,6 +20,7 @@ RUN apt-get update && \
         wget \
         gfortran \
         cmake \
+	libjpeg-dev \
         bsdtar && \
     apt-get clean && \
     apt-get autoremove && \
