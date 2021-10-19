@@ -52,10 +52,8 @@ RUN cd $HOME/work;\
     cd sct-book;\
     git clone --branch=master https://github.com/neuropoly/spinalcordtoolbox.git sct;  \
     cd sct; \
+    echo "notebook" >> /home/jovyan/work/sct-book/sct/requirements.txt; \
     yes | ./install_sct; \
-    source /home/jovyan/.bashrc; \
-    source activate /home/jovyan/work/sct-book/sct/python/envs/venv_sct; \
-    pip install notebook; \
     cd .. ;\
     chmod -R 777 $HOME/work/sct-book;
 
