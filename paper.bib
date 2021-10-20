@@ -1,10 +1,40 @@
-@article{neurolibre:2021,
-  title={Neurolibre: A preprint server for interactive data analyses},
-  author={Karakuzu, Agah and DuPre, Elizabeth and Tetrel, Loic and Boudreau, Mathieu and Poline, Jean-Baptiste and Stikov, Nikola and Bellec, Pierre},
-  journal={NeuroLibre},
-  volume={1},
-  number={1},
-  pages={1--2},
-  year={2021},
-  publisher={CONP}
+@article{DeLeener:2017,
+  title={SCT: Spinal Cord Toolbox, an open-source software for processing spinal cord MRI data},
+  author={De Leener B, Levy S, Dupont SM, Fonov VS, Stikov N, Louis Collins D, Callot V, Cohen-Adad J},
+  journal={NeuroImage},
+  volume={145, Part A},
+  pages={24-43},
+  year={2017},
+  issn={1053-8119},
+  doi={https://doi.org/10.1016/j.neuroimage.2016.10.009},
+  url={http://www.sciencedirect.com/science/article/pii/S1053811916305560},
+  abstract={For the past 25 years, the field of neuroimaging has witnessed the development of several software packages for processing multi-parametric magnetic resonance imaging (mpMRI) to study the brain. These software packages are now routinely used by researchers and clinicians, and have contributed to important breakthroughs for the understanding of brain anatomy and function. However, no software package exists to process mpMRI data of the spinal cord. Despite the numerous clinical needs for such advanced mpMRI protocols (multiple sclerosis, spinal cord injury, cervical spondylotic myelopathy, etc.), researchers have been developing specific tools that, while necessary, do not provide an integrative framework that is compatible with most usages and that is capable of reaching the community at large. This hinders cross-validation and the possibility to perform multi-center studies. In this study we introduce the Spinal Cord Toolbox (SCT), a comprehensive software dedicated to the processing of spinal cord MRI data. SCT builds on previously-validated methods and includes state-of-the-art MRI templates and atlases of the spinal cord, algorithms to segment and register new data to the templates, and motion correction methods for diffusion and functional time series. SCT is tailored towards standardization and automation of the processing pipeline, versatility, modularity, and it follows guidelines of software development and distribution. Preliminary applications of SCT cover a variety of studies, from cross-sectional area measures in large databases of patients, to the precise quantification of mpMRI metrics in specific spinal pathways. We anticipate that SCT will bring together the spinal cord neuroimaging community by establishing standard templates and analysis procedures.}
 }
+
+@article{Gros:2019,
+  title={Automatic segmentation of the spinal cord and intramedullary multiple sclerosis lesions with convolutional neural networks},
+  author={Gros B, De Leener B, Badji A, Maranzano J, Eden D, Dupont SM, Talbott J, Zhuoquiong R, Liu Y, Granberg T, Ouellette R, Tachibana Y, Hori M, Kamiya K, Chougar L, Stawiarz J, Hillert J,
+Bannieri E,…Cohen-Adad J},
+  journal={NeuroImage},
+  volume={184},
+  pages={901-915},
+  year={2019},
+  doi={https://doi.org/10.1016/j.neuroimage.2018.09.081},
+  url={https://www.sciencedirect.com/science/article/abs/pii/S1053811918319578},
+  abstract={The spinal cord is frequently affected by atrophy and/or lesions in multiple sclerosis (MS) patients. Segmentation of the spinal cord and lesions from MRI data provides measures of damage, which are key criteria for the diagnosis, prognosis, and longitudinal monitoring in MS. Automating this operation eliminates inter-rater variability and increases the efficiency of large-throughput analysis pipelines. Robust and reliable segmentation across multi-site spinal cord data is challenging because of the large variability related to acquisition parameters and image artifacts. In particular, a precise delineation of lesions is hindered by a broad heterogeneity of lesion contrast, size, location, and shape. The goal of this study was to develop a fully-automatic framework — robust to variability in both image parameters and clinical condition — for segmentation of the spinal cord and intramedullary MS lesions from conventional MRI data of MS and non-MS cases. Scans of 1042 subjects (459 healthy controls, 471 MS patients, and 112 with other spinal pathologies) were included in this multi-site study (n = 30). Data spanned three contrasts (T1-, T2-, and T2∗-weighted) for a total of 1943 vol and featured large heterogeneity in terms of resolution, orientation, coverage, and clinical conditions. The proposed cord and lesion automatic segmentation approach is based on a sequence of two Convolutional Neural Networks (CNNs). To deal with the very small proportion of spinal cord and/or lesion voxels compared to the rest of the volume, a first CNN with 2D dilated convolutions detects the spinal cord centerline, followed by a second CNN with 3D convolutions that segments the spinal cord and/or lesions. CNNs were trained independently with the Dice loss. When compared against manual segmentation, our CNN-based approach showed a median Dice of 95% vs. 88% for PropSeg (p ≤ 0.05), a state-of-the-art spinal cord segmentation method. Regarding lesion segmentation on MS data, our framework provided a Dice of 60%, a relative volume difference of −15%, and a lesion-wise detection sensitivity and precision of 83% and 77%, respectively. In this study, we introduce a robust method to segment the spinal cord and intramedullary MS lesions on a variety of MRI contrasts. The proposed framework is open-source and readily available in the Spinal Cord Toolbox.}
+}
+
+@article{DeLeener:2018,
+  title={PAM50: Unbiased multimodal template of the brainstem and spinal cord aligned with the ICBM152 space},
+  author={De Leener B, Fonov VS, Louis Collins D, Callot V, Stikov N, Cohen-Adad J},
+  journal={NeuroImage},
+  volume={165},
+  pages={170-179},
+  year={2018},
+  issn={1053-8119},
+  doi={https://doi.org/10.1016/j.neuroimage.2017.10.041},
+  url={hhttps://www.sciencedirect.com/science/article/abs/pii/S1053811917308686},
+  abstract={Template-based analysis of multi-parametric MRI data of the spinal cord sets the foundation for standardization and reproducibility, thereby helping the discovery of new biomarkers of spinal-related diseases. While MRI templates of the spinal cord have been recently introduced, none of them cover the entire spinal cord. In this study, we introduced an unbiased multimodal MRI template of the spinal cord and the brainstem, called PAM50, which is anatomically compatible with the ICBM152 brain template and uses the same coordinate system. The PAM50 template is based on 50 healthy subjects, covers the full spinal cord (C1 to L2 vertebral levels) and the brainstem, is available for T1-, T2-and T2*-weighted MRI contrasts and includes a probabilistic atlas of the gray matter and white matter tracts. Template creation accuracy was assessed by computing the mean and maximum distance error between each individual spinal cord centerline and the PAM50 centerline, after registration to the template. Results showed high accuracy for both T1- (mean = 0.37 ± 0.06 mm; max = 1.39 ± 0.58 mm) and T2-weighted (mean = 0.11 ± 0.03 mm; max = 0.71 ± 0.27 mm) contrasts. Additionally, the preservation of the spinal cord topology during the template creation process was verified by comparing the cross-sectional area (CSA) profile, averaged over all subjects, and the CSA profile of the PAM50 template. The fusion of the PAM50 and ICBM152 templates will facilitate group and multi-center studies of combined brain and spinal cord MRI, and enable the use of existing atlases of the brainstem compatible with the ICBM space.}
+}
+
+
