@@ -1,6 +1,4 @@
 format: jb-book
 root: introduction
-parts:
-  - caption: SCT pipeline
-    chapters:
-      - file: 01/sct_mtsat
+chapters:
+  - file: 01/sct_mtsat
