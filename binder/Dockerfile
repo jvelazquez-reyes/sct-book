@@ -47,6 +47,7 @@ RUN cd $HOME/work;\
                 folium \
                 matplotlib \
 		repo2data \
+		osfclient \
                 sklearn \
                 nilearn ; \
     git clone https://github.com/jvelazquez-reyes/sct-book.git;     \
